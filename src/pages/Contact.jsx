@@ -41,12 +41,9 @@ export default function Contact() {
             Contact <span className="text-yellow-400">Me</span>
           </h2>
           <p className="text-gray-400 mt-3 max-w-2xl mx-auto">
-            I’m available for freelance projects, collaborations, internships,
-            and professional opportunities. Whether you’re looking for a UI/UX
-            designer to bring your ideas to life, a developer to build modern
-            web applications, or a teammate to contribute to your project, feel
-            free to reach out. I’d be happy to discuss how we can work together
-            and create something impactful.
+            I’m available for freelance projects, collaborations, and professional opportunities.<br>
+            </br>
+            Reach out to discuss how we can work together.
           </p>
         </div>
 
