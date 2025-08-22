@@ -25,11 +25,11 @@ export default function Projects() {
         </h2>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-          {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
-        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-16">
+  {projects.map((project) => (
+    <ProjectCard key={project.id} project={project} />
+  ))}
+</div>
 
         {/* Skills Heading */}
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
@@ -37,17 +37,14 @@ export default function Projects() {
         </h2>
 
         {/* Skills Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-          {skills.map((skill, index) => (
-            <div
-              key={index}
-              className="flex flex-col items-center justify-center bg-[#0f172a] border border-gray-700 rounded-xl shadow-md p-6 hover:bg-yellow-400 hover:text-black transition"
-            >
-              <div className="text-#0f172a mb-3">{skill.icon}</div>
-              <p className="text-#0f172a">{skill.name}</p>
-            </div>
-          ))}
-        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+  {skills.map((skill, index) => (
+    <div key={index} className="flex flex-col items-center justify-center bg-[#0f172a] border border-gray-700 rounded-xl shadow-md p-4 sm:p-6 hover:bg-yellow-400 hover:text-black transition">
+      <div className="mb-3">{skill.icon}</div>
+      <p>{skill.name}</p>
+    </div>
+  ))}
+</div>
       </div>
     </section>
   );
